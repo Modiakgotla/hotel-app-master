@@ -1,5 +1,6 @@
 import '../css/Contact.css'
-
+import twitter from '../images/Rooms/twitter.png'
+import facebook from '../images/Rooms/facebook.png'
 function ContactBody(){
     return(
         <div>
@@ -12,13 +13,15 @@ function ContactBody(){
                                     <div>
                                         <h2>Contact Details</h2>
                                         <address>
-                                            freew<br></br>
-                                            tere
+                                        376 airlie st.Durban, KwaZulu Natal, South Africa
+                                            <br></br>
+                                            
                                         </address>
-                                        <h4>Tell:</h4>
-                                        <h4>Fax:</h4>
-                                        <h4>Queries:</h4>
-                                        <p>Social Media Links</p>
+                                        <h4>Tell: (031)325-2022</h4>
+                                        <h4>Fax:(031)325-2021</h4>
+                                        <h4>Queries:hopewellgarden@hotmail.co.za </h4>
+                                       
+                                       
                                     </div>
                                     <div>
                                         <form>

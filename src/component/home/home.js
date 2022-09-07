@@ -178,24 +178,24 @@ const Home = () => {
 
 //             <footer className="footer">
 //                 <div className="footer-container">
-//                     <div>
-//                         <ul className="social-icons">
-//                             <li className="flex">
-//                                 <i className="fab fa-facebook-f"></i>
-//                             </li>
-//                             <li className="flex">
-//                                 <i className="fab fa-twitter"></i>
-//                             </li>
-//                             <li className="flex">
-//                                 <i className="fab fa-linkedin"></i>
-//                             </li>
-//                             <li className="flex">
-//                                 <i className="fab fa-instagram"></i>
-//                             </li>
-//                         </ul>
-//                     </div>
-//                 </div>
-//             </footer>
+                    <div>
+                      <ul className="social-icons">
+                            <li className="flex">
+                                <i className="fab fa-facebook-f"></i>
+                            </li>
+                           <li className="flex">
+                               <i className="fab fa-twitter"></i>
+                          </li>
+                          <li className="flex">
+                               <i className="fab fa-linkedin"></i>
+                           </li>
+                           <li className="flex">
+                               <i className="fab fa-instagram"></i>
+                          </li>
+                      </ul>
+                 </div>
+              </div>
+           </footer>
 
 //             <h2>Contact Us</h2>
 //             <div className="contact-item">
