@@ -9,7 +9,8 @@ import Book from './component/booking/Booking'
 import Contact from './component/contact/Contact'
 import Rooms from './component/rooms/rooms'
 import Services from './component/services/services'
-import HomePage from './component/home/homepage';
+// import HomePage from './component/home/homepage';
+import Homepage from './component/homepage/homepage';
 
 function App () {
   return (
@@ -18,7 +19,7 @@ function App () {
       
       <Router>
       <Routes>
-        <Route exact path='/' element= {<HomePage/>}/>
+        <Route exact path='/' element= {<Homepage/>}/>
         <Route path="/About" element={<About/>} />
 
         <Route path="/Contacts" element={<Contact/>} />
