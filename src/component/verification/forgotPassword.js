@@ -3,7 +3,7 @@ import { useHistory} from  'react-router-dom';
 import {Link} from "react-router-dom"
 import {sendPasswordResetEmail} from 'firebase/auth';
 import {ToastContainer,toast} from 'react-toastify';
-import {auth} from '../config/firebase'
+import {auth} from '../firebaseConfi/firebaseConfig'
 
 // import  ArrowRightIcon from '../assets/Right.png'
 

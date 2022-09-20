@@ -43,10 +43,9 @@ a:hover{
 .content {
     background: rgba(100, 100, 100, 0.2);
     width: 100vw;
-    height: 100vw;
+    height: 15vw;
     background-size: cover;
     text-align: center;
-    position: fixed;
 }
 .content h1{
     color: #f76c2f;

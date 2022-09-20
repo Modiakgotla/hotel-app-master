@@ -1,12 +1,15 @@
 import ContactHeader from "./ContactHeader"
 import ContactBody from "./ContactBody"
+// import React, {useState} from 'react'
 
 
 function Contact(){
+
+
     return(
         <div>
 
-            <ContactHeader/>
+            {/* <ContactHeader/> */}
             <ContactBody/>
 {/*             
             <div>

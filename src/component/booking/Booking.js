@@ -1,6 +1,6 @@
-// import { initializeApp } from "firebase/app";
-// import { ref, set } from "firebase/database";
-// import { database } from "../firebaseConfi/firebaseConfig"
+import { initializeApp } from "firebase/app";
+import { ref, set } from "firebase/database";
+import { database } from "../config/firebase";
 import family from "../images/Rooms/FamilyQuad.png"
 import single from '../images/Rooms/single.jpg'
 import presidential from '../images/Rooms/Presidential-Guest.jpg'
@@ -41,15 +41,15 @@ const Book = () => {
         cards.style.display = "none";
         request.style.display = "block";
 
-        // writeUserData();
-        // function writeUserData() {
-        //     const db = database();
-        //     set(ref(db, 'booking/'), {
-        //         HotelImage: Rooms[0].image,
-        //         HotelName: Rooms[0].name,
-        //         HotelPrice: 'R' + Rooms[0].price,
-        //     });
-        // }
+        writeUserData();
+        function writeUserData() {
+            const db = database();
+            set(ref(db, 'booking/'), {
+                HotelImage: Rooms[0].image,
+                HotelName: Rooms[0].name,
+                HotelPrice: 'R' + Rooms[0].price,
+            });
+        }
 
     }
 
@@ -67,15 +67,15 @@ const Book = () => {
         cards.style.display = "none";
         request.style.display = "block";
 
-        // writeUserData();
-        // function writeUserData() {
-        //     const db = database();
-        //     set(ref(db, 'booking/'), {
-        //         HotelImage: Rooms[1].image,
-        //         HotelName: Rooms[1].name,
-        //         HotelPrice: 'R' + Rooms[1].price,
-        //     });
-        // }
+        writeUserData();
+        function writeUserData() {
+            const db = database();
+            set(ref(db, 'booking/'), {
+                HotelImage: Rooms[1].image,
+                HotelName: Rooms[1].name,
+                HotelPrice: 'R' + Rooms[1].price,
+            });
+        }
 
     }
 
@@ -93,15 +93,15 @@ const Book = () => {
         cards.style.display = "none";
         request.style.display = "block";
 
-        // writeUserData();
-        // function writeUserData() {
-        //     const db = database();
-        //     set(ref(db, 'booking/'), {
-        //         HotelImage: Rooms[2].image,
-        //         HotelName: Rooms[2].name,
-        //         HotelPrice: 'R' + Rooms[2].price,
-        //     });
-        // }
+        writeUserData();
+        function writeUserData() {
+            const db = database();
+            set(ref(db, 'booking/'), {
+                HotelImage: Rooms[2].image,
+                HotelName: Rooms[2].name,
+                HotelPrice: 'R' + Rooms[2].price,
+            });
+        }
 
     }
 
@@ -118,7 +118,9 @@ const Book = () => {
 
         imageTarget.src = '';
         nameTarget.innerHTML = '';
-        priceTarget.innerHTML = ''; 
+        priceTarget.innerHTML = '';
+
+        
     }
     const back = (event) =>{
             
@@ -162,7 +164,7 @@ const Book = () => {
                         <button className="btn" onClick={request}>Request</button>
                         <br></br>
                         <br></br>
-                        <button className="btn" >Go Back</button>
+                        {/* <button className="btn" >Go Back</button> */}
                     </div>
                     <br></br>
                     <br></br>

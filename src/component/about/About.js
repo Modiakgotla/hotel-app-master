@@ -19,7 +19,6 @@ function About() {
                     <a className="menu"><Link to="/Rooms">Rooms</Link></a>
                     <a className="menu"><Link to="/Contacts">Reviews</Link></a>
                     <a className="menu"><Link to="/Services">Services</Link></a>
-             
               </div>
           </section>
 

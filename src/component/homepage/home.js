@@ -14,20 +14,18 @@
 // import {Link} from "react-router-dom"
 // import   {useState} from 'react'
 
-import confimg from '../images/Conference Room.jpg' 
-import spaimg from '../images/Spa.jpg'
-// import  from '../Services/Buffet.jpg'
-import buffimg from '../images/Buffet.jpg'
+import login from '../home/login'
+import SignUp from '../home/signup'
+import confimg from '../images/Services/Conference Room.jpg'
+import spaimg from '../images/Services/Spa.jpg'
+import buffimg from '../images/Services/Buffet.jpg'
 import singimg from '../images/Rooms/single.jpg'
-
-// import famimg from '../Rooms/FamilyQuad.jpg'
 import famimg from '../images/Rooms/FamilyQuad.jpg'
-// import pressimg from '../Rooms/PresidentialGuest.jpg'
-import pressimg from '../images/Rooms/Presidential-Guest.jpg';
+import pressimg from '../images/Rooms/Presidential-Guest.jpg'
+
 
 import React from "react";
-import '../homepage/homepage.css'
-// import Homepage from '../slideshow/slideshow'
+import '../css/homepage.css'
 
 
 const Homepage = () => {
@@ -36,31 +34,36 @@ const Homepage = () => {
             <header className="header" id="header">
                 <div className="head-top">
                     <div className="site-name">
-                            <h1>Hopewell's Garden</h1>
-                            <a href="/">Home</a>
-                            <a href="/About">About</a>
-                            <a href="/Contacts" >Contacts</a>
-                            <a href="/Rooms" >Rooms</a>
-                            <a href="/Services" >Services</a>
+                        <span>Hopewell's Garden</span>
+                        <ul className="navbar">
+                    <li className=" #header">
+                        <a href="/">Home</a></li>
+                    <li><a href="/About">About</a></li>
+                    <li><a href="/Contacts" >Contacts</a></li>
+                    <li><a href="/Rooms" >Rooms</a></li>
+                    <li><a href="/Services" >Services</a></li>
+                </ul>
                     </div>
-                    
+                    {/* <div className="site-nav">
+                        <span id="nav-btn">MENU <i className="fas fa-bars"></i></span>
+                    </div> */}
                 </div>
-                <hr></hr>
-                <div className="head-button">
-                    <h1>NICE AND COMFORTABLE PLACE TO STAY</h1>
-                    <button type="button" className="head-btn">Log In</button>
-                    <button type="button" className="head-btn">Sign Up</button>
+                <div className="head-button flex">
+                    <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+                    <button type="button" className="head-btn">< a href="/login"> Log In</a></button>
+                    <button type="button" className="head-btn">< a href="/SignUp">Sign Up</a></button>
                 </div>
             </header>
 
-            {/* <div className="sidenav" id="sidenav">
+            <div className="sidenav" id="sidenav">
                 <span className="cancel-btn" id="cancel-btn">
                     <i className="fas fa-times"></i>
                 </span>
 
-                <button className="btn sign-up">sign up</button>
-                <button className="btn sign-up">log in</button>
-            </div> */}
+           
+                {/* <button className="btn sign-up">sign up</button>
+                <button className="btn sign-up">log in</button> */}
+            </div>
 
 
             <div className="book">
@@ -93,19 +96,18 @@ const Homepage = () => {
                 </form>
             </div>
 
-            <section className="services sec-width" id="services1">
+            <section className="services sec-width" id="services">
                 <div className='about'>
                     <h2>About</h2>
                     <p>Looking for a place to stay in Durban that is both contemporary and reasonably priced? In that case, Hopewell's Garden is a great option for you.<br></br> We offer practical short-term lodging in the bustling city center of KwaZulu-Natal. Make sure to reserve a room at our Award-Winning Express Hotel whether you are visiting Durban for business or pleasure.
                         Since 2005, the hotel has established itself as a market niche and a top choice for international tourists, NGOs, corporate travelers, and government officials
-                        After a day spent taking advantage of all that Durban has to offer, our hotel is the perfect place to return to for a restful night's sleep, a delicious breakfast, and a peaceful evening as well as taking advantage of our jacuzzi, swimming pool and our ocean view.
-                    </p>
+                        After a day spent taking advantage of all that Durban has to offer, our hotel is the perfect place to return to for a restful night's sleep, a delicious breakfast, and a peaceful evening as well as taking advantage of our jacuzzi, swimming pool and our ocean view.</p>
+                </div>
+                <div className="title">
+                    <h2>Services</h2>
                 </div>
                 <div className="services-container">
 
-                    <div className="title">
-                        <h2>Services</h2>
-                    </div>
                     <article className="service">
                         <div className="service-image">
                             <img src={confimg} />
@@ -126,7 +128,7 @@ const Homepage = () => {
 
                     <article className="service">
                         <div className="service-image">
-                            <img src={buffimg} />
+                            {<img src={buffimg} />}
                         </div>
                         <div className="service-text">
                             <h3>Breakfast Area</h3>
@@ -143,36 +145,36 @@ const Homepage = () => {
 
                     <article className="room">
                         <div className="room-image">
-                            <img src={singimg} />
+                            {<img src={singimg} />}
                         </div>
                         <div className="room-text">
                             <h3>Single Room</h3>
                             <p className="rate">
-                                <span>R1500.00 /</span> Per Night
+                                <span>R650 /</span> Per Night
                             </p>
                         </div>
                     </article>
 
                     <article className="room">
                         <div className="room-image">
-                            <img src={famimg} />
+                            {<img src={famimg} />}
                         </div>
                         <div className="room-text">
-                            <h3>Family Quad</h3>
+                            <h3>Single Room</h3>
                             <p className="rate">
-                                <span>R1200.00 /</span> Per Night
+                                <span>R1050 /</span> Per Night
                             </p>
                         </div>
                     </article>
 
                     <article className="room">
                         <div className="room-image">
-                            <img src={pressimg} />
+                            {<img src={pressimg} />}
                         </div>
                         <div className="room-text">
-                            <h3>Presidential</h3>
+                            <h3>Single Room</h3>
                             <p className="rate">
-                                <span>R2500.00 /</span> Per Night
+                                <span>R1500 /</span> Per Night
                             </p>
                         </div>
                     </article>
@@ -221,7 +223,7 @@ const Homepage = () => {
                 <span>
                     <i className="fas fa-phone-alt"></i>
                     <span>
-                        (031)325-2022
+                        (011)325-2022
                     </span>
                 </span>
             </div>

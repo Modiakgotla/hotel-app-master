@@ -1,40 +1,34 @@
 *{
     margin: 0;
     padding: 0;
-
-  
 }
 .topPart{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
-    text-align: center;
 }
 
 .logo{
     color: #f76c2f;
-    margin-left: 1px;
-    text-align: left;
+    
 }
 
 .menu-part{
     display: flex;
     flex-direction: row;
     align-items: center;
-   
+    
 }
 .menu{
     border-radius: 8px;
-    text-align: center;
-    position: absolute;
     border-left: 3px solid rgba(100, 100, 100, 0.2);
 }
 
 .ImagePart{
     background: url(../images/hotel1.jpg);
     background-size: cover;
-    height: 260px;
+    height: 220px;
     padding-top: 80px;
     background-position: center;
     margin-top: 20px;
@@ -50,7 +44,7 @@
     font-size: 2em;
     text-align: center;
     margin-top: 40px;
-
+  
 }
 .underline{
     height: 04px;
@@ -67,8 +61,6 @@
     margin-top: 60px;
     background-color: #f2f2f2;
     height: 260px;
-    text-align: center;
-
 }
 
 .social{
@@ -77,39 +69,33 @@
     justify-content: center;
     align-items: center;
     font-size: small;
-    text-align: center;
 }
 .twitter-part{
     display: flex;
     padding-top: 40px;
     padding-right: 40px;
-    text-align: center;
 }
 .twitter{
     height: 20px;
     padding-right: 10px;
-    text-align: center;
 }
 
 .facebook-part{
     display: flex;
     padding-top: 5px;
     padding-right: 40px;
-    text-align: center;
 }
 .facebook-part span{
     padding-left: 10px;
-    text-align: center;
+
 }
 .email{
     margin-left: 30px;
     height: 15px;
-    text-align: center;
 }
 
 .phone{
     padding-left: 28px;
-    text-align: center;
 }
 .designer{
     padding-top: 110px;
@@ -120,10 +106,3 @@
 .border{
     border-right: #f76c2f;
 }
-
-@media only screen and (max-width: 1200px) and (min-width:350px){
-    body {
-      background-color: lightblue;
-    }
-  }
-

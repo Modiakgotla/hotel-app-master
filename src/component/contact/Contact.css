@@ -17,16 +17,13 @@ form {
     width: 100%;
     padding: 0.65rem 0.5rem;
     font-size: 1rem;
-    color: black;
-    border: 2px solid  rgba(100, 100, 100, 0.2);
+    color: white;
+    border: 2px solid #4a5568;
+  
     border-radius: 10px;
     outline: none;
   }
   
-  input:hover {
-    border: 2px solid black;
-  }
-
   input:focus,
   select:focus {
     border-color: #4299e1;
